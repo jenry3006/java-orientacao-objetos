@@ -7,7 +7,7 @@ public class PrincipalAluno {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
+		/*String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
 		String idade = JOptionPane.showInputDialog("Qual a idade?");
 		String dataNascimento = JOptionPane.showInputDialog("Qual a data de nascimento?");
 		String rg = JOptionPane.showInputDialog("Qual o rg?");
@@ -36,7 +36,7 @@ public class PrincipalAluno {
 		aluno1.setNota1(Double.parseDouble(nota1));
 		aluno1.setNota2(Double.parseDouble(nota2));
 		aluno1.setNota3(Double.parseDouble(nota3));
-		aluno1.setNota4(Double.parseDouble(nota4));
+		aluno1.setNota4(Double.parseDouble(nota4));*/
 
 		/*System.out.println("Aluno: " + aluno1.nome);
 		System.out.println("Idade: " + aluno1.idade);
@@ -51,26 +51,25 @@ public class PrincipalAluno {
 		System.out.println("Média da nota é: " + aluno1.getMediaNota());
 		System.out.println("Resultado: " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));*/
 
-		System.out.println(aluno1.toString());
+		/*System.out.println(aluno1.toString());
 		System.out.println("Média do aluno: " + aluno1.getMediaNota());
-		System.out.println("Resultado: " + aluno1.getAlunoAprovado());
+		System.out.println("Resultado: " + aluno1.getAlunoAprovado2());*/
 
-		
-		Aluno aluno2 = new Aluno(); 
-		aluno2.setNome("Joao da silva");
-		aluno2.setIdade(40);
-		aluno2.setDataNascimento("30/06/1972");
 
 		System.out.println("=================================");
 
-		System.out.println(aluno2.nome);
-		System.out.println(aluno2.idade);
-		
-		Aluno aluno3 = new Aluno(); 
-		
-		Aluno aluno4 = new Aluno("Maria");
-		
-		Aluno aluno5 = new Aluno("José", 50);
+		Aluno aluno1 = new Aluno();
+		aluno1.setNome("Jenry");
+
+		Aluno aluno2 = new Aluno();
+		aluno2.setNome("Jenry");
+
+		if (aluno1.equals(aluno2)){
+			System.out.println("Alunos são iguais.");
+		} else{
+			System.out.println("Alunos são diferentes.");
+		}
+
 
 	}
 
